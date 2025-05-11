@@ -12,18 +12,20 @@
     <a href="https://fosstodon.org/@marlinfirmware"><img alt="Follow MarlinFirmware on Mastodon" src="https://img.shields.io/mastodon/follow/109450200866020466?domain=https%3A%2F%2Ffosstodon.org&logoColor=%2300B&style=social"></a>
 </p>
 
+WARNING: this fork is still a WIP and **HAS NOT BEEN TESTED!**  Although I'm not expecting any cathastrophic failures, try it at your own risk.
+
 Additional documentation can be found at the [Marlin Home Page](//marlinfw.org/).
 Please test this firmware and let us know if it misbehaves in any way. Volunteers are standing by!
+
+## Aim of this fork
+
+My beautiful Artillery Genius (first version, here referred to as X1) is very old, and the [original FW source code by Artillery](https://github.com/artillery3d/genius-firmware) is stuck at Marlin version 1.1.9. Just for fun, I took the vanilla configuration shipped by Artillery and ported it to the newest Marlin version availble.
+
+The code in the default branch `2.1.x` contains this "vanilla" upgraded Marlin FW, and should be a good starting point for any customizaions. Personally, I mounted a fake BLTouch sensor to my printer, and the customized FW I am currently running can be found in the other branch `NJ-2.1.x`.
 
 ## Marlin 2.1
 
 Marlin 2.1 continues to support both 32-bit ARM and 8-bit AVR boards while adding support for up to 9 coordinated axes and to up to 8 extruders.
-
-Download earlier versions of Marlin on the [Releases page](//github.com/MarlinFirmware/Marlin/releases).
-
-## Example Configurations
-
-Before you can build Marlin for your machine you'll need a configuration for your specific hardware. Upon request, your vendor will be happy to provide you with the complete source code and configurations for your machine, but you'll need to get updated configuration files if you want to install a newer version of Marlin. Fortunately, Marlin users have contributed dozens of tested configurations to get you started. Visit the [MarlinFirmware/Configurations](//github.com/MarlinFirmware/Configurations) repository to find the right configuration for your hardware.
 
 ## Building Marlin 2.1
 
